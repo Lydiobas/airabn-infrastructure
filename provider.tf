@@ -9,8 +9,9 @@ terraform {
 
 provider "aws" {
 	region = "us-east-1"
-	profile = "default"
-}	
+}
+
+
 
 variable "tags" {
 	type = map
