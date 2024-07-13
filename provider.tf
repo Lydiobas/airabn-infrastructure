@@ -13,11 +13,5 @@ provider "aws" {
 
 
 
-variable "tags" {
-  type = map(any)
-  default = {
-    Name = "Jenkins"
-    Env  = "Dev"
-  }
 
-}
+
