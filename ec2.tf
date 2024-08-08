@@ -5,3 +5,11 @@ resource "aws_instance" "sunshine" {
 }
 
 
+terraform {
+  backend "s3" {
+    bucket = "sunshine-0012"
+    key    = "terraform.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "sunshine"
+  }
+}
